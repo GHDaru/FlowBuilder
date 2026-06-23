@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvaluationRule",
+  "type": "object",
+  "properties": {
+    "service_name": {
+      "type": "string",
+      "description": "The service identified by the classifier"
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of markdown prompt filenames (without extension) to execute"
+    }
+  },
+  "required": ["service_name", "dimensions"]
+}
